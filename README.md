@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Forchung MVP - Research Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web application built with **React** and **Firebase** for managing and organizing research projects. This MVP demonstrates core functionality for research collaboration, data management, and project tracking.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📋 Project Overview
 
-### `npm start`
+Forchung is a research management platform that enables:
+- **Project Management** - Create, organize, and track research initiatives
+- **Secure Authentication** - User login and account management
+- **Real-time Data Storage** - Cloud-based database with Firestore
+- **User-friendly Interface** - Intuitive design for seamless navigation
+- **Analytics & Tracking** - Monitor project progress and engagement
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+| Technology | Purpose |
+|------------|---------|
+| **React** | Frontend framework |
+| **Firebase** | Backend & authentication |
+| **Firestore** | Real-time database |
+| **Google Analytics** | User tracking & insights |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+src/
+├── firebase.js          # Firebase configuration
+├── App.js              # Main application component
+├── components/         # React components
+├── pages/              # Page components
+└── styles/             # CSS styling
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Jacksonbond-haizz/Forchung_MVP.git
+cd Forchung_MVP
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Set Up Environment Variables
+Create a `.env.local` file in the project root with your Firebase credentials:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```env
+REACT_APP_API_KEY=your_api_key
+REACT_APP_AUTH_DOMAIN=your_auth_domain
+REACT_APP_PROJECT_ID=your_project_id
+REACT_APP_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_APP_ID=your_app_id
+REACT_APP_MEASUREMENT_ID=your_measurement_id
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. Start Development Server
+```bash
+npm start
+```
 
-## Learn More
+The app will open at `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔐 Security
 
-### Code Splitting
+- **Environment Variables** - API keys are stored in `.env.local` (never committed to GitHub)
+- **Firebase Security** - Authentication and data access rules configured
+- **Best Practices** - Sensitive credentials are protected and not exposed in code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📦 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start       # Run development server
+npm test        # Run tests
+npm build       # Build for production
+npm eject       # Eject from Create React App (irreversible)
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌟 Features
 
-### Advanced Configuration
+- ✅ User authentication with Firebase
+- ✅ Real-time data synchronization
+- ✅ Project creation and management
+- ✅ Analytics tracking
+- ✅ Responsive design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🔄 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Potential features for future versions:
+- Team collaboration tools
+- Advanced filtering and search
+- Data export functionality
+- Mobile app support
+- Integration with third-party tools
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👤 Author
+
+**Aung Yee Mon Myo**
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+## 🤝 Contact
+
+For questions, feedback, or collaboration opportunities, reach out via GitHub.
