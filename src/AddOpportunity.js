@@ -43,21 +43,28 @@ export default function AddOpportunity() {
       <h2 className="text-2xl font-semibold text-center">Add New Opportunity</h2>
 
       <input
-        className="w-full border p-2 rounded"
+        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
         placeholder="Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
 
       <textarea
-        className="w-full border p-2 rounded"
+        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        placeholder="Description"
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
+/>
+
+      <textarea
+        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
         placeholder="Description"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
 
       <select
-        className="w-full border p-2 rounded"
+        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
         value={type}
         onChange={(e) => setType(e.target.value)}
       >
@@ -67,7 +74,7 @@ export default function AddOpportunity() {
 
       <input
         type="date"
-        className="w-full border p-2 rounded"
+        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
         value={deadline}
         onChange={(e) => setDeadline(e.target.value)}
       />
